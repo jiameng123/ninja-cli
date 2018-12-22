@@ -1,6 +1,6 @@
 {
   "name": "awesome-ninja-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "简单的脚手架",
   "main": "bin/ninja",
   "author": "wuli menggege",
