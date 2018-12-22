@@ -3,8 +3,8 @@
   "version": "1.0.1",
   "description": "简单的脚手架",
   "main": "bin/ninja",
-  "author": "你的蒙哥",
-  "license": "MIT",
+  "author": "wuli menggege",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/jiameng123/ninja-cli.git"
