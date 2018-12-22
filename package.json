@@ -1,12 +1,22 @@
 {
-  "name": "ninja-cli",
+  "name": "awesome-ninja-cli",
   "version": "1.0.0",
   "description": "简单的脚手架",
   "main": "bin/ninja",
   "author": "你的蒙哥",
   "license": "MIT",
+  "repository":{
+    "type": "git",
+    "url":"https://github.com/jiameng123/ninja-cli.git"
+  },
+  "keywords": [
+    "javascript-cli",
+    "nodejs",
+    "custom template",
+    "es6"
+  ],
   "bin": {
-    "init": "bin/ninja"
+    "ninja": "bin/ninja"
   },
   "dependencies": {
     "chalk": "^2.4.1",
