@@ -1,7 +1,7 @@
 # awesome-ninja-cli
 
 ### 安装
-npm i awesome-ninja-cli -g
+npm i @ninja123/awesome-ninja-cli
 
 ### commanders
 commader  | description
