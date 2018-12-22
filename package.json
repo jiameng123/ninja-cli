@@ -1,0 +1,24 @@
+{
+  "name": "ninja-cli",
+  "version": "1.0.0",
+  "description": "简单的脚手架",
+  "main": "bin/ninja",
+  "author": "你的蒙哥",
+  "license": "MIT",
+  "bin": {
+    "init": "bin/ninja"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cli-table3": "^0.5.1",
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.1",
+    "log-symbols": "^2.2.0",
+    "ora": "^3.0.0"
+  }
+}

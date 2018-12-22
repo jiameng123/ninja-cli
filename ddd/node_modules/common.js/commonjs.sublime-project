@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/james/Desktop/projects/umbra/commonjs"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/home/james/Desktop/commonjs-sandbox"
+		}
+	]
+}

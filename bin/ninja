@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+
+const {
+    program,
+    fs,
+    path,
+    resolveCmd,
+    symbols,
+    chalk
+} = require('../utils/index');
+
+
+program.version(require( path.resolve(__dirname, '../package')).version, '-v, --version')
+program.usage('<command>')
+
+//创建项目模版
+program.command('init ?<name>')
+.description(chalk.hsv(32, 100, 100)('generator a new project'))
+.alias('i')
+.action((projectName) => {
+    try {
+      
+        const proName = typeof projectName === 'string' ? projectName : '';
+        require(resolveCmd('init'))(proName);
+
+    } catch (error) {
+        //'Project already exists'
+        console.log(symbols.error, chalk.red(error));
+    }
+    
+})
+
+//新增一个项目模版
+program.command('add')
+.description(chalk.hsv(32, 100, 100)('add a new template'))
+.alias('a')
+.action(() => {
+    require(resolveCmd('add'))
+})
+
+//删除一个模版
+program.command('delete')
+.description(chalk.hsv(32, 100, 100)('Delete a template'))
+.alias('del')
+.action(() => {
+    require(resolveCmd('delete'))
+})
+
+//查看模板
+program.command('list')
+.description(chalk.hsv(32, 100, 100)('List all the templates'))
+.alias('l')
+.action(() => {
+    require(resolveCmd('list'))
+})
+
+program.parse(process.argv);
+if(!program.args.length) {
+    program.help()
+}
